@@ -1,0 +1,95 @@
+.artigo{
+    background-color: #ffffff;
+/* cor de fundo da caixa */
+    padding: 30px;
+/* margem interna */
+    margin: 64px 0;
+/* margem externa: superior e inferior 64px, esquerda e direita 0 */
+    border-radius: 5px;
+/* arredonas as pontas da bordas de todos os lados, quanto mais px mais arredonda fica */
+}
+
+/* Estilização a cabeçalho do artigo */
+
+.cabecalho-artigo{
+    display: flex; 
+/* muda o layout das caixas ficando um elemento do lado do outo */
+    justify-content: space-between;
+/* separa os dois elementos deixando um no começo e outro no final da linha */
+    margin-bottom: 30px;
+/* margem-bottom é a margem de baixo */
+}
+
+.cabecalho-data{
+    color: #b6b6b6;
+/* altera a cor da fonte */
+    font-size: 1em;
+/* alterando a fonte, 1em é uma unidade de medida pra facilitar a responcividade */
+}
+
+.cabecalho-icone{
+    font-size: 1.5em;
+/* alterando a fonte, 1.5em é uma unidade de medida pra facilitar a responcividade */
+    color: #bc3fdb
+/* altera a cor da fonte */
+}
+
+/* ::before= é um Seletor pra "Font Awesome" pra fazer alteração nos ícones */
+.cabecalho-icone:hover::before{
+    font-weight: 900;
+/* muda a espessura da letra */
+    cursor: pointer;
+/* muda o cursor pra mão de link */
+}
+
+.conteudo-artigo{
+    margin-bottom: 10px;
+/* altera a margem inferiror */
+    font-size: 1.6em;
+/* alterando a fonte, 1.6em é uma unidade de medida pra facilitar a responcividade */
+    color: #313131;
+/* altera a cor da fonte */
+    font-weight: 500;
+/* altera o peso da fonte ou estila tipo negrito, italico */
+}
+
+.conteudo-paragrafo{
+    color: #b6b6b6;
+/* altera a cor da fonte */
+    font-size: 1.1em;
+/* alterando a fonte, 1.1em é uma unidade de medida pra facilitar a responcividade */
+    line-height: 1.5em;
+/* altera o espaçamento da linha, 1.5em é uma unidade de medida pra facilitar a responcividade */
+    font-weight: 400;
+/* altera o espessura a linha mais grosa ou mais fina */
+}
+
+.conteudo-img{
+    width: 100%;
+/* define o tamanho de uma largura  */
+    height: 250px;
+/* define o tamanho de uma altura */
+    border-radius: 5px 5px 0 0;
+/* arredonas as pontas da bordas do lado superior esquerda e direita */
+    background-image: linear-gradient(90deg, rgba(219, 73, 196, 0.3) 0%, rgba(188, 62, 219, 0.3) 100%), url(../img/tucano.jpg);
+/* define uma imagem de fundo, "url()" define o caminho pra pegar a imagem sem usar ../ pra voltar na pasta da imagem salva */
+/* linear-gradient(90deg, rgba(219, 73, 196, 0.3) 0%, rgba(188, 62, 219, 0.3) 100%) - usada para fazer um efeito degrade, usada antes da imagem "url()" o efeito degrade ficar na imagem */
+    background-size: cover;
+/* define o tamnha da imagem dentro do tamanho da caixa estabelecida com width e height */
+    background-repeat: no-repeat;
+/* o padrão da imagem de fundo é repetir varias vezes com esse comando a imagem não se repete */
+    background-position-x: 0;
+/* altera a posição da imagem dentro da caixa, x muda a posição da horizontal */
+    background-position-y: 20%;
+/* altera a posição da imagem dentro da caixa, y muda a posição da vertical */
+
+}
+
+/* Sempre chamar o id com o # para estilizar */
+#artigo-4{
+    margin-top: 0;
+/* margem de cima */
+    border-radius: 0 0 5px 5px;
+/* arredonas as pontas da bordas do lado de baixo esquerda e direita */
+}
+

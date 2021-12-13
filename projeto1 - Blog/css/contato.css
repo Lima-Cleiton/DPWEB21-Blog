@@ -1,0 +1,74 @@
+#contato-section{
+    height: calc(100vh - 157px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#input-cima{
+    display: flex;
+    justify-content: space-between;
+}
+.input-contato{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    
+}
+.estilo-input{
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px solid #bc3fdb;
+    background-color: #f3f5f7;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1em;
+}
+/* estilo-input::placeholder */
+/* estilo-input= class > que esta dentro ::placeholder= um atributo da tag*/
+ /* tag= <input class="estilo-input" id="email" type="email" placeholder="Exemplo@email.com"> */
+                                                            /* é o que irá alterar "placeholder" */
+.estilo-input::placeholder{
+    color: #D79AE9;
+    
+}
+/* :focus - altera as bordas dos inputs ao clicar */
+.estilo-input:focus{
+    outline: none;
+    border: 1px solid #6C257E;
+}
+
+.textarea-contato{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+}
+#mensagem{
+    resize: none;
+    height: 100px;
+}
+#form-contato{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+   
+}
+label{
+    margin-bottom: 5px;
+    color: #D79AE9;
+}
+#botao-contato{
+    margin-top: 9%;
+    width: 30%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1em;
+    padding: 15px;
+    background: linear-gradient(90deg, #DB49C4 0%, #BC3EDB 100%);
+    border: none;
+    border-radius: 5px;
+    color: #f3f5f7;
+    opacity: 0.7;
+}
+#botao-contato:hover{
+    cursor:pointer;
+    opacity: 1;
+}
